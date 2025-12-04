@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Developer Portfolio - Placeholder</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="container hero-content">
+      <div>
+        <p class="hero-eyebrow">Backend Developer • C# • ASP.NET Core</p>
+        <h1 class="hero-title">[Your Name Here]</h1>
+        <p class="hero-subtitle">
+          I build clean, database-backed APIs and backend systems using ASP.NET Core,
+          C#, and Entity Framework Core.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn primary">View Projects</a>
+          <a href="#contact" class="btn ghost">Contact</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <p class="hero-card-label">Currently working on</p>
+        <p class="hero-card-title">Products API (ASP.NET Core + SQLite)</p>
+        <p class="hero-card-text">
+          A production-style REST API with full CRUD, validation, and Swagger documentation.
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <p class="section-intro">
+          I focus on building reliable backend services and APIs that are easy to maintain and integrate.
+        </p>
+        <div class="grid skills-grid">
+          <div class="card">
+            <h3>C# & ASP.NET Core</h3>
+            <p>
+              Building REST APIs with minimal APIs and MVC, configuring dependency injection,
+              middleware, and application startup.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Entity Framework Core & Databases</h3>
+            <p>
+              Designing models, working with DbContext, migrations, and connecting applications
+              to SQLite and SQL-based databases.
+            </p>
+          </div>
+          <div class="card">
+            <h3>API Design & Documentation</h3>
+            <p>
+              Creating clean endpoints, handling validation, and exposing Swagger / OpenAPI
+              for smooth integration with clients and frontends.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+
+        <!-- Products API Project -->
+        <article class="project">
+          <div class="project-header">
+            <h3>Products API (ASP.NET Core + EF Core + SQLite)</h3>
+            <span class="tag">Backend • REST API</span>
+          </div>
+          <p class="project-text">
+            A clean, production-style REST API built with ASP.NET Core 8, Entity Framework Core, and SQLite.
+            Supports full CRUD operations for products, input validation using DataAnnotations, and Swagger
+            for interactive API exploration and testing.
+          </p>
+          <ul class="project-list">
+            <li>Minimal APIs with strongly-typed endpoints</li>
+            <li>Database persistence using EF Core and SQLite</li>
+            <li>Automatic database creation on startup</li>
+            <li>Model validation with friendly error responses</li>
+          </ul>
+          <div class="project-links">
+            <!-- TODO: replace # with your actual GitHub repo URL -->
+            <a href="#" target="_blank" class="btn small">View Code on GitHub</a>
+            <!-- TODO: if you deploy the API later, add the live URL here -->
+            <a href="#" target="_blank" class="btn ghost small">Live API (Coming Soon)</a>
+          </div>
+        </article>
+
+        <!-- Placeholder for future projects -->
+        <article class="project project-placeholder">
+          <div class="project-header">
+            <h3>Next Project Coming Soon</h3>
+            <span class="tag">Work in Progress</span>
+          </div>
+          <p class="project-text">
+            This space is reserved for the next app, API, or tool I build — whether it's a habit tracker,
+            expense tracker, or a small SaaS-style backend.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- How I Can Help Section -->
+    <section id="services" class="section">
+      <div class="container">
+        <h2 class="section-title">How I Can Help</h2>
+        <p class="section-intro">
+          I build backend systems and APIs that are clean, easy to use, and ready to plug into your app,
+          website, or business workflow.
+        </p>
+        <div class="grid skills-grid">
+          <div class="card">
+            <h3>Custom APIs</h3>
+            <p>
+              Product catalogs, inventory, bookings, dashboards, or internal tools you can access from
+              web or mobile apps.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Database-Backed Apps</h3>
+            <p>
+              Persistent data storage using EF Core and SQLite/SQL Server, with secure and structured models.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Integration & Automation</h3>
+            <p>
+              Connecting different systems together and building small tools that save time and automate
+              repetitive work.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-alt">
+      <div class="container contact">
+        <h2 class="section-title">Contact</h2>
+        <p class="section-intro">
+          Interested in working together, or want to see more of my code?
+          Reach out anytime.
+        </p>
+        <div class="contact-links">
+          <!-- TODO: update these when you’re ready -->
+          <a href="mailto:your-email@example.com" class="contact-link">your-email@example.com</a>
+          <a href="https://github.com/your-github-username" target="_blank" class="contact-link">GitHub</a>
+          <a href="https://www.linkedin.com" target="_blank" class="contact-link">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> [Your Name Here]. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Auto-update year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
